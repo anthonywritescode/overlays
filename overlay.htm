@@ -2,6 +2,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="overlay.css" />
+  <style type="text/css">
+  body {
+    color: #fff;
+    font-size: 56px;
+  }
+  </style>
 </head>
 <body>
   <div id="widget" class="widget-AlertBox"><div id="alert-box"><div id="wrap">
@@ -9,23 +15,26 @@
 
     <!-- HERE DOWN GOES IN THE BOX -->
 
-    <!-- alert image -->
-    <div id="alert-image-wrap">
-      <div id="alert-image">{img}</div>
-    </div>
-
     <!-- main alert box window -->
     <div id="alert-text-wrap">
 
       <!-- alert text -->
       <div id="alert-text">
-        hello world
-        <!-- alert message -->
-        <!-- messageTemplate will be replaced with your message template -->
-        <!-- for example : {name} is now following! or {name} donated {amount} -->
 
-        <div id="alert-message">{messageTemplate}</div>
-        <div id="alert-user-message">{userMessage}</div>
+        <div id="alert-message">
+          <div class="awc-term"><div>
+            <div><strong>$</strong> git commit \</div>
+            <div>&nbsp;&nbsp;-m '{commitMsg}'</div>
+            <div class="awc-name-wrapper">
+              <div class="awc-name"><span>{name}&#8203;</span></div>
+            </div>
+            <div>.............<span class="awc-passed">Passed</span></div>
+            <div id="alert-user-message">
+              <div>&nbsp;</div>
+              <div>{userMessage}</div>
+            </div>
+          </div></div>
+        </div>
 
       </div>
 
